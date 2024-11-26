@@ -1,1 +1,1 @@
-# chaos-engineering-accion
+Welcome to chaos-engineering-training!
