@@ -15,13 +15,6 @@ spec:
       containers:
         - name: nginx-container
           image: nginx:latest
-          resources:
-            requests:
-              memory: "15Mi"
-              cpu: "5m"
-            limits:
-              memory: "20Mi"
-              cpu: "5.5m"
           ports:
             - containerPort: 80
 ---
