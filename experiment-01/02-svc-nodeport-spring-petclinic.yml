@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: svc-nodeport-spring-petclinic
 spec:
-  type: NodePort
+  type: LoadBalancer
   ports:
     - port: 80
       # By default and for convenience, the `targetPort` is set to
@@ -13,7 +13,6 @@ spec:
       # Optional field
       # By default and for convenience, the Kubernetes control plane
       # will allocate a port from a range (default: 30000-32767)
-      nodePort: 31111 # Node Port
   selector:
     project: spring-pod-demo
 # Reference: https://kubernetes.io/docs/concepts/services-networking/service/#type-nodeport
